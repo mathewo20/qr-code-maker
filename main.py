@@ -13,8 +13,12 @@ name_for_qrcode = input("what do you want your qr code name to be?: ")
 
 
 
-img.save(name_for_qrcode, '.png')
+img.save(f"{name_for_qrcode}.png")
 
+if qrcode.make == True:
+    print("an error occurred please try again.")
+else:
+    print("your qrcode has been created successfully")
 
 
 
